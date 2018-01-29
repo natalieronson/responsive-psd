@@ -1,0 +1,209 @@
+nav, .nav_contact {
+    border: 1px solid red;
+}
+
+a {
+    text-decoration: none;
+    color: $black;
+}
+
+.nav_contact, .nav_contact_links, .business, .business_brand, .business_information, .navigation, .navigation_links, .navigation_search, .navigation_social, .nav_contact_group {
+    display: flex;
+}
+ 
+.nav_contact_links {
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid pink;
+    margin: 0;
+    padding: 0;
+    font-weight: 400;
+}
+
+.nav_contact_group {
+    justify-content: space-between;
+}
+
+.nav_contact {
+    justify-content: space-between;
+    // @include fontSize(16px);
+    color: $black;
+}
+
+.nav_contact_links li {
+    padding: 0 5px;
+}
+
+.nav_contact_links img{
+    padding-right: 20px;
+}
+
+.nav_contact_links--dropdown img {
+    padding-right: 10px;
+}
+
+.nav_contact_links:nth-of-type(1), .nav_contact_links:nth-of-type(3) {
+    margin-right: 20px;
+}
+
+.business {
+    justify-content: space-between;
+    padding-top: 20px;
+}
+
+.business_brand, .business_information {
+    align-items: flex-start;
+}
+
+.business_information_text {
+    margin-left: 20px;
+}
+
+.business_brand_text h1 {
+    padding-bottom: 15px;
+    padding-top: 5px;
+}
+
+.business_information_text h1, .business_information_text h2 {
+    margin: 0;
+}
+
+.business_brand h1 {
+    color: $black2;
+    font-size: fontCalc(32);
+    font-weight: 700;
+    line-height: 0.81;
+    span {
+        color: $blue;
+    }
+}
+
+.business_brand h3 {
+    color: $black;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0.4;
+    line-height: 1.6;
+}
+
+.business_information:not(.business_brand) h2 {
+     
+    font-family: $source;
+    color: $grey;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 0.45px;
+    line-height: 1.4;
+}
+
+.business_information:not(.business_brand) h3 {
+        color: $black;
+        font-size: 16px;
+        font-weight: 400;
+        letter-spacing: 0.4px;
+        line-height: 1.6;
+}
+
+.business_information h3 {
+        margin: 5px 0;
+}
+
+.business_consultation h2 {
+    font-family: $source;
+    color: $blue;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0.4px;
+    line-height: 1.6;
+    text-transform: uppercase;
+    padding: 15px;
+    border: 3px solid $blue;
+    text-align: center;
+    margin: 0;
+}
+
+.navigation {
+    background: $blue;
+    margin-top: 20px;
+    justify-content: space-around;
+}
+
+
+
+.navigation_links a {
+    color: $white;
+    font-size: 18px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0.45px;
+    line-height: 1.6;
+    border: 1px solid yellow;
+    padding: 0;
+    margin: 0;
+}
+
+.navigation_links li:last-of-type a {
+    text-transform: capitalize;
+}
+
+.navigation_links {
+    border: 1px solid red;
+    justify-content: space-between;
+    padding: 0;
+    li:not(.navigation_links_contact) {
+        margin-right: 10px;
+    }
+    padding: 20px 0px;
+}
+
+.navigation_search {
+    align-items: center;
+    border: 1px solid red;
+    justify-content: space-between;
+    padding: 0;
+    img {
+        margin-right: 30px;
+    }
+    .fa {
+        color: $white;
+        font-size: 18px;
+    }
+}
+
+.navigation_search_image {
+    position: relative;
+    span {
+        position: absolute;
+        top: 20px;
+        left: 10px;
+        background: $blue2;
+        color: $white;
+        // border: 5px solid $blue2;
+        border-radius: 30px;
+        height: 30px;
+        width: 30px;
+        text-align: center;
+        // padding: 50%;
+        font-size: 16px;
+        line-height: 1.6;
+    }
+}
+
+.navigation_social {
+    // padding: 0;
+    // padding-right: 20px;
+    border-left: 1px solid $blue3;
+    margin: 0;
+    color: $white;
+    font-size: 17px;
+    line-height: 1.6;
+    justify-content: space-between;
+    align-items: center;
+    li:not(:last-of-type) {
+        margin-right: 10px;
+    }
+}
+
+
+
+

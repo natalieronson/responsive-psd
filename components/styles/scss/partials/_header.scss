@@ -1,0 +1,10 @@
+.header_image {
+    background-image: url('../../imgs/background.png');
+    background-size: contain;
+    border: 1px solid blue;
+    background-repeat: no-repeat;
+}
+
+.header_text_expert {
+    display: flex;
+}

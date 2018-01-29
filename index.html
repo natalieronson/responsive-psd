@@ -4,56 +4,55 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700|Poppins:300,400,500|Source+Sans+Pro:200,300,400" rel="stylesheet">
     <link rel="stylesheet" href="components/styles/css/style.css">
     <title>Document</title>
 </head>
 <body>
     <nav>
-        <div class="contact wrapper">
-            <ul class="contact_links">
-                <li class="contact_linksImage">
-                    <a href="#"><img src="components/imgs/phone-call.svg" alt="Phone icon"></a>
-                </li>
-                <li><a href="#">+88 01912704287</a></li>
-                <li class="contact_links--image">
-                    <a href="#"><img src="components/imgs/mail.svg" alt="Email icon"></a>
-                </li>
-                <li><a href="#">Perfect_help@gmail.com</a></li>
-                <li class="contact_links--image">
-                    <a href="#"><img src="components/imgs/lang-switch.png" alt="Letter symbols"></a>
-                </li>
-                <li>
-                    <a href="#"><i class="fa fa-caret-down" aria-hidden="true"></i></a>
-                </li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Claim & Policy</a></li>
-                <li><a href="#">Register</a></li>
-             </ul>
+        <div class="nav_contact wrapper">
+            <div class="nav_contact_group">
+                <ul class="nav_contact_links">
+                    <li><img src="components/imgs/phone-call.svg" alt="Phone icon"></li>
+                    <li><span>+88 01912704287</span></li>
+                </ul>
+                    
+                <ul class="nav_contact_links">
+                    <li><img src="components/imgs/mail.svg" alt="Email icon"></li>
+                    <li>Perfect_help@gmail.com</li>
+                </ul>
+            </div>
+            <div class="nav_contact_group">
+                <ul class="nav_contact_links nav_contact_links--dropdown">
+                        <li><img src="components/imgs/lang-switch.png" alt="Letter symbols"></li>
+                        <li>English</li>
+                        <li><i class="fa fa-caret-down" aria-hidden="true"></i></li>
+                </ul>
+                <ul class="nav_contact_links">
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Claim & Policy</a></li>
+                    <li><a href="#">Register</a></li>
+                 </ul>
+            </div>
         </div>
         <div class="business wrapper">
-            <div class="business_brand">
-                <div class="business_brand--image">
+            <div class="business_brand business_information">
                     <img src="components/imgs/advisory-lock.svg" alt="Lock logo">
-                </div>
-                <div class="business_brand--text">
-                    <h1>Advisory</h1>
-                    <h2>Perfect Business Solution</h2>
+                <div class="business_information_text business_brand_text">
+                    <h1>Advisor<span>y</span></h1>
+                    <h3>Perfect Business Solution</h3>
                 </div>
             </div>
-            <div class="business_location">
-                <div class="business_location--image">
+            <div class="business_information">
                     <img src="components/imgs/internet.svg" alt="Internet symbol">
-                </div>
-                <div class="business_location--text">
+                <div class="business_information_text">
                     <h2>Main Office</h2>
                     <h3>136 advice the good, CA</h3>
                 </div>
             </div>
-            <div class="business_time">
-                <div class="business_time--image">
+            <div class="business_information">
                      <img src="components/imgs/stopwatch.svg" alt="Stopwatch">
-                </div>
-                <div class="business_time--text">
+                <div class="business_information_text">
                     <h2>Opening Time</h2>
                     <h3>Mon-Sat: 09:00 to 19:00</h3>
                 </div>
@@ -65,18 +64,20 @@
         <div class="navigation wrapper">
             <ul class="navigation_links">
                 <li><a href="#">Home</a></li>
-                <li><a href="#">About us</a></li>
+                <li><a href="#">About Us</a></li>
                 <li><a href="#">Services</a></li>
                 <li><a href="#">Projects</a></li>
                 <li><a href="#">Blog</a></li>
                 <li><a href="#">Shop</a></li>
-                <li><a href="#">Contact</a></li>
+                <li class="navigation_links_contact"><a href="#">Contact</a></li>
             </ul>
-            <ul class="navigation_more">
-                <li><img src="components/imgs/shopping-bag.svg" alt="Shopping bag icon"></li>
-                <li>2</li>
-                <li><i class="fa fa-search" aria-hidden="true"></i></li>
-            </ul>
+            <div class="navigation_search">
+               <div class="navigation_search_image">
+                    <img src="components/imgs/shopping-bag.svg" alt="Shopping bag icon">
+                    <span>2</span>
+               </div>
+                <i class="fa fa-search" aria-hidden="true"></i>
+            </div>
             <ul class="navigation_social">
                 <li>
                     <i class="fa fa-twitter" aria-hidden="true"></i>
@@ -102,145 +103,138 @@
         </div>
     </nav>
     <header>
-        <div class="header_image"></div>
-            <div class="header_text wrapper">
-                <h1>Advisory Business Consulting Services</h1>
-                <p>We offer consulting expertise in the areas of turnaround management, receiverships, and loan restructuring. Our services, through corporate renewal and recovery, enable a return to profitability.</p>
-                <div class="header_text--expert">
-                    <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
-                    <h3>Meet our expert</h3>
-            </div>  
+        <div class="header_image">
+            <div class="wrapper">
+                <div class="header_text">
+                    <h1>Advisory Business Consulting Services</h1>
+                    <p>We offer consulting expertise in the areas of turnaround management, receiverships, and loan restructuring. Our services, through corporate renewal and recovery, enable a return to profitability.</p>
+                    <div class="header_text_expert arrow">
+                        <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+                        <h3>Meet our expert</h3>
+                    </div>  
+                </div>
+            </div>
         </div>
     </header>
-    <section>
-        <div class="about_image">
-            <img src="components/imgs/Ellipse.png" alt="">
-        </div>
-        <div class="about wrapper">
-            <div class="about_description">
+    <section class="about">
+         <div class="wrapper">
                 <h3>We Help</h3>
-                <h2>Highly collaborative and personalized business transformation consulting</h2>
-                <pO>Our approach includes facilitated workshops, individual interviews and team reviews, all designed to foster close collaboration between your team and our business consultants, helping us to establish an in-depth understanding of your business and technology requirements as the foundation of our assessment process.</p>
-                <div class="about_text--more">
-                    <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
-                    <h3>Read More</h3>
+           <div class="lower_wrapper">
+                <div class="about_description">
+                    <h2>Highly collaborative and personalized business transformation consulting</h2>
+                    <p>Our approach includes facilitated workshops, individual interviews and team reviews, all designed to foster close collaboration between your team and our business consultants, helping us to establish an in-depth understanding of your business and technology requirements as the foundation of our assessment process.</p>
+                    <div class="about_more arrow">
+                        <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+                        <h3>Read More</h3>
+                    </div>
                 </div>
-            </div>
-            <div class="about_offer">
-                <h2>Our free offer</h2>
-                <p>Helping you to get the greatest strategic advantages from your data management environment. We then work with your key stakeholders to develop actionable recommendations along with design.</p>
-                <div class="about_offer--consultation">
-                    <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
-                    <h3>Free Consultation</h3>
+                <div class="about_offer">
+                    <h2>Our free offer</h2>
+                    <p>Helping you to get the greatest strategic advantages from your data management environment. </p>
+                    <p>We then work with your key stakeholders to develop actionable recommendations along with design.</p>
+                    <div class="about_more arrow">
+                        <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+                        <h3>Free Consultation</h3>
+                    </div>
                 </div>
-            </div>
+           </div>
         </div>
     </section>
-    <section>
-        <div class="services wrapper">
+    <section class="services">
+        <div class="wrapper">
             <div class="services_title">
-                <h3>What we provide</h3>
-                <h2>Our Services</h2>
+                    <h3>What we provide</h3>
+                    <h2>Our Services</h2>
+                    <hr>
             </div>
             <div class="services_list">
-                <div class="services_list--item">
+                <div class="services_list_item">
                     <img src="components/imgs/calendar.svg" alt="">
                     <h3>Business Growth</h3>
                     <p>Helping you get the greatest strategic advantage from your data management environment</p>
                 </div>
-                <div class="services_list--item">
+                <div class="services_list_item">
                     <img src="components/imgs/paper-pen.svg" alt="">
                     <h3>Sustainability</h3>
                     <p>When it comes to sustainability & corporate responsbility, complete with power and flexibility</p>
                 </div>
-                <div class="services_list--item">
+                <div class="services_list_item">
                     <img src="components/imgs/lightbulb.svg" alt="">
                     <h3>Performance</h3>
                     <p>Helping you get the greatest strategic advantage from your data management environment</p>
                 </div>
-                <div class="services_list--item">
+                <div class="services_list_item">
                     <img src="components/imgs/graph-clock.svg" alt="">
                     <h3>Finance Consulting</h3>
                     <p>Finance consulting helping you get the greatest strategic advantage from your data management</p>
                 </div>
-                <div class="services_list--item">
+                <div class="services_list_item">
                     <img src="components/imgs/hand-percent.svg" alt="">
                     <h3>Insurance Consulting</h3>
                     <p>Insurance consulting when it comes to sustainability and corporate responsibility </p>
                 </div>
-                <div class="services_list--item">
+                <div class="services_list_item">
                     <img src="components/imgs/briefcase.svg" alt="">
                     <h3>B2B Consulting</h3>
                     <p>B2B helping you get the greatest strategic advantage from your data management environment</p>
                 </div>
             </div>
-            <div class="services_image">
-                <img src="components/imgs/ellipses2.png" alt="">
-            </div>
         </div>
+        <!-- <img src="components/imgs/ellipses2.png" alt=""> -->
     </section>
     <section>
         <div class="choice wrapper">
             <div class="choice_text">
                 <h2>Why Choosing Advisory</h2>
+                <hr>
                 <p class="choice_text--tagline">Our services, through corporate renewal and recovery, enable a return to profitability</p>
                 <p>Advisory Business Consulting offers a wide range of services to businesses either before or during tough financial times. What sets us apart from other firms in the industry is over three decades of combined legal and business expertise. Whether your business is struggling to avoid bankruptcy or trying its best to prepare for it, we will provide the assistance you need to make the right decisions.</p>
             </div>
-            <div class="choice_image">
-                <img src="components/imgs/creation.png" alt="">
-            </div>
+            <img src="components/imgs/creation.png" alt="">
         </div>
-        <div class="choice_services">
-            <div class="choice_services--block">
-                <div class="choice_services--block--image">
+        <div class="choice_services wrapper">
+            <div class="choice_services_block">
+                <div class="choice_services_block_title">
                     <img src="components/imgs/document-light.svg" alt="">
+                    <h3>Risk management</h3>
                 </div>
-                <h3>Risk management</h3>
                 <p>Consulting understands that to help meet client challenges</p>
             </div>
-            <div class="choice_services--block">
-                <div class="choice_services--block--image">
+            <div class="choice_services_block">
+                <div class="choice_services_block_title">
                     <img src="components/imgs/graph-light.svg" alt="">
+                    <h3>Strategic Communications</h3>
                 </div>
-                <h3>Strategic Communications</h3>
                 <p>Consulting understands that to help meet client challenges</p>
             </div>
-            <div class="choice_services--block">
-                <div class="choice_services--block--image">
+            <div class="choice_services_block">
+                <div class="choice_services_block_title">
                     <img src="components/imgs/bulls-eye.svg" alt="">
+                    <h3>Private Capital Advisory</h3>
                 </div>
-                <h3>Private Capital Advisory</h3>
                 <p>Consulting understands that to help meet client challenges</p>
             </div>
         </div>
     </section>
-    <section>
-        <div class="stats">
+    <section class="stats">
+        <div class="wrapper">
             <div class="stats_block">
-                <div class="stats_block--image">
-                    <img src="components/imgs/digital.svg" alt="">
-                </div>
+                 <img src="components/imgs/digital.svg" alt="">
                 <h3>Projects Successful</h3>
                 <h4>2684</h4>
             </div>
             <div class="stats_block">
-                <div class="stats_block--image">
-                    <img src="components/imgs/speaker.svg" alt="">
-                </div>
+                <img src="components/imgs/speaker.svg" alt="">
                 <h3>Experienced Consultants</h3>
                 <h4>3450</h4>
             </div>
             <div class="stats_block">
-                <div class="stats_block--image">
-                    <img src="components/imgs/bulls-eye.svg" alt="">
-                </div>
+                <img src="components/imgs/bulls-eye.svg" alt="">
                 <h3>Team Members</h3>
                 <h4>125</h4>
             </div>
             <div class="stats_block">
-                <div class="stats_block--image">
-                    <img src="components/imgs/graph-light.svg" alt="">
-                </div>
+                <img src="components/imgs/graph-light.svg" alt="">
                 <h3>Avg Profit Increased</h3>
                 <h4>75%</h4>
             </div>
@@ -249,34 +243,32 @@
     <section>
         <div class="projects wrapper">
             <div class="projects_information">
-                <h3>What we done</h3>
-                <h2>Latest Project</h2>
-                <p>We have done more than 10,000 projects in the short period time and all the projects are done by our expert team with 100% satisfaction.</p>
-                <div class="project_information--more">
-                    <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
-                    <h4>More Projects</h4>
+                <div class="project_information_title">
+                    <h3>What we done</h3>
+                    <h2>Latest Project</h2>
+                    <hr>
+                </div>
+                <div class="project_information_more">
+                    <p>We have done more than 10,000 projects in the short period time and all the projects are done by our expert team with 100% satisfaction.</p>
+                    <div class="arrow">
+                        <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+                        <h4>More Projects</h4>
+                    </div>
                 </div>
             </div>
             <div class="projects_images">
-                <div class="projects_images--image">
-                    <img src="components/imgs/stil-331259.png" alt="">
-                </div>
-                <div class="projects_images--image">
-                    <img src="components/imgs/plants.png" alt="">
-                </div>
-                <div class="projects_images--image">
-                    <img src="components/imgs/samuel-zeller-74983.png" alt="">
-                </div>
+                <div class="projects_images_box"><img src="components/imgs/stil-331259.png" alt=""></div>
+                <div class="projects_images_box"><img src="components/imgs/plants.png" alt=""></div>
+                <div class="projects_images_box"><img src="components/imgs/samuel-zeller-74983.png" alt=""></div>
             </div>
         </div>
     </section>
-    <section>
-        <div class="quote wrapper">
-            <div class="quote_image">
-                <img src="components/imgs/marius-ciocirlan-398931.png" alt="">
-            </div>
+    <section class="quote">
+        <div class="wrapper">
+           <img src="components/imgs/marius-ciocirlan-398931.png" alt="">
             <div class="quote_text">
-                <p>Our consultants, engineers and architects bring deep industry and technical knowledge to each engagement, basedo n years of experience helping companies around the world adopt software and get strategic</p>
+                <p>Our consultants, engineers and architects bring deep industry and technical knowledge to each engagement, based on years of experience helping companies around the world adopt software and get strategic</p>
+                <hr>
                 <p>Mahufuz Riad</p>
                 <p>Founder VP</p>
             </div>
@@ -285,35 +277,35 @@
     <section>
         <div class="blog wrapper">
             <div class="blog_information">
-                <h3>From Our Blog </h3>
-                <h2>Latest News</h2>
-                <p>Our most popular blog post. We have done more than 10,000 projects in the short period of time and all the projects are done.</p>
-                <div class="project_information--more">
-                    <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
-                    <h4>More News</h4>
+                <div class="blog_information_header">
+                    <h3>From Our Blog </h3>
+                    <h2>Latest News</h2>
+                    <hr>
+                </div>
+                <div class="project_information_more">
+                    <p>Our most popular blog post. We have done more than 10,000 projects in the short period of time and all the projects are done.</p>
+                    <div class="arrow">
+                        <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+                        <h4>More News</h4>
+                    </div>
                 </div>
             </div>
             <div class="blog_posts">
-                <div class="blog_posts--post">
-                    <div class="blog_posts--post--image">
-                        <img src="components/imgs/Hover.png" alt="">
-                    </div>
+                <div class="blog_posts_post">
+                    <img src="components/imgs/Hover.png" alt="">
                     <h2>Consulting Reports Third Quarter 2017 Financial Results</h2>
                     <p>For the quarter, revenues of 449.0 million increased 10.9 million or 2.5%</p>
                     <h4>November 06, 2017</h4>
                 </div>
-                <div class="blog_posts--post">
-                    <div class="blog_posts--post--image">
-                        <img src="components/imgs/domenico-loia-272251.png" alt="">
-                    </div>
+                <div class="blog_posts_post">
+                    <img src="components/imgs/domenico-loia-272251.png" alt="">
                     <h2>Accounting, Legal, Engineering, Dental, Architectural</h2>
                     <p>For the quarter, revenues of 449.0 million increased 10.9 million or 2.5%</p>
                     <h4>November 06, 2017</h4>
                 </div>
-                <div class="blog_posts--post">
-                    <div class="blog_posts--post--image">
-                        <img src="components/imgs/rawpixel-com-252127.png" alt="">
-                    </div>
+                <div class="blog_posts_post">
+                    <img src="components/imgs/rawpixel-com-252127.png" alt="">
+                    <h2>When a business can no longer meet the demands of its short/long term</h2>
                     <p>For the quarter, revenues of 449.0 million increased 10.9 million or 2.5%</p>
                     <h4>November 06, 2017</h4>
                 </div>
@@ -321,71 +313,78 @@
         </div>
     </section>
     <footer>
-        <div class="wrapper">
-            <div class="footer_logos">
-               <img src="components/imgs/GroupM.svg" alt="">
-               <img src="components/imgs/logo-oxfam.svg" alt="">
-               <img src="components/imgs/ANC.svg" alt="">
-               <img src="components/imgs/VMware.svg" alt="">
+        <div class="footer_logos">
+               <div class="wrapper">
+                   <img src="components/imgs/GroupM.svg" alt="">
+                   <img src="components/imgs/logo-oxfam.svg" alt="">
+                   <img src="components/imgs/ANC.svg" alt="">
+                   <img src="components/imgs/VMware.svg" alt="">
+
+                <div class="footer_contact">
+                    <!-- <div class="wrapper"> -->
+                        <div class="footer_contact_block nav_contact_links">
+                            <img src='components/imgs/mail.svg' alt="">
+                            <span>Advisory@gmail.com</span>
+                        </div>
+                        <div class="footer_contact_block nav_contact_links">
+                            <img src="components/imgs/phone-call.svg" alt="">
+                            <span>+88 01912704287</span>
+                        </div>
+                        <div class="footer_contact_block nav_contact_links">
+                            <img src="components/imgs/pin.svg" alt="">
+                            <span1>43, New York, NY 10018</span>
+                        </div>
+                    <!-- </div> -->
+                </div>
             </div>
-            <div class="footer_contact">
-               <div class="footer_contact_block">
-                   <img src=components/imgs/mail.svg alt="">
-                    <a href="#">Advisory@gmail.com</a>
-               </div>
-               <div class="footer_contact_block">
-                   <img src="components/imgs/phone-call.svg" alt="">
-                   <span>+88 01912704287</span>
-               </div>
-               <div class="footer_contact_block">
-                   <img src="components/imgs/pin.svg" alt="">
-                   <span1>43, New York, NY 10018</span>
-               </div>
-            </div>
-            <div class="footer_brand">
-                <div class="footer_brand_logo">
-                   <img src="components/imgs/advisory-lock.svg" alt="">
-                   <div class="footer_brand_logo_text">
-                       <h1>Advisory</h1>
-                       <h2>Perfect Business Solution</h2>
-                   </div>
-                   <p>Over 20 years of experience we'll ensure you always get the best guidance. We serve clients at every level of their organization we can be most where as a trusted advisor</p>
-                   <div class="footer_brand_logo_email">
-                       <p>Receive news right on your email</p>
-                       <form action="">
-                            <input type="text" name="email" id="" placeholder="Your email">
-                            <input type="button" value="&#f1d9;">
-                        </form>
-                   </div>
-                </div>
-                <div class="footer_brand_focus">
-                    <h3>Our Quick Focus</h3>
-                    <ul>
-                        <li class="footer_brand_focus_link--transformation">Business Transformation</li>
-                        <li>Business Growth</li>
-                        <li>Sustainability</li>
-                        <li>Performance</li>
-                        <li>Customer Insights</li>
-                        <li>B2B Consulting</li>
-                        <li>Insurance Consulting</li>
-                    </ul>
-                </div>
-                <div class="footer_brand_news">
-                    <h3>Latest News</h3>
-                    <div class="footer_brand_news_article">
-                        <h4>Business processes are fundamental to every company</h4>
-                        <h5>November 12, 2017</h5>
+        </div>
+            <div class="footer_main wrapper">
+                <div class="footer_brand ">
+                    <div class="footer_brand_logo business_brand">
+                       <img src="components/imgs/advisory-lock.svg" alt="">
+                       <div class="footer_brand_logo_text business_brand_text">
+                           <h1>Advisor<span>y</span></h1>
+                           <h3>Perfect Business Solution</h3>
+                       </div>
                     </div>
-                    <div class="footer_brand_news_article">
-                        <h4>Business processes are fundamental to every company</h4>
-                        <h5>November 12, 2017</h5>
+                       <p>Over 20 years of experience we'll ensure you always get the best guidance. We serve clients at every level of their organization we can be most where as a trusted advisor</p>
+                       <div class="footer_brand_logo_email">
+                           <p>Receive news right on your email</p>
+                           <form action="">
+                                <input type="text" name="email" id="" placeholder="Your email">
+                                <input type="button" value="&#f1d9;">
+                            </form>
+                       </div>
                     </div>
-                    <div class="footer_brand_news_quote">
-                        <i class="fa fa-arrow-right" aria-hidden="true"></i>
-                        <h4>Get A Quote</h4>
+                    <div class="footer_brand_focus">
+                        <h3>Our Quick Focus</h3>
+                        <ul>
+                            <li class="footer_brand_focus_link--transformation">Business Transformation</li>
+                            <li>Business Growth</li>
+                            <li>Sustainability</li>
+                            <li>Performance</li>
+                            <li>Customer Insights</li>
+                            <li>B2B Consulting</li>
+                            <li>Insurance Consulting</li>
+                        </ul>
+                    </div>
+                    <div class="footer_brand_news">
+                        <h3>Latest News</h3>
+                        <div class="footer_brand_news_article">
+                            <h4>Business processes are fundamental to every company</h4>
+                            <h5>November 12, 2017</h5>
+                        </div>
+                        <div class="footer_brand_news_article">
+                            <h4>Business processes are fundamental to every company</h4>
+                            <h5>November 12, 2017</h5>
+                        </div>
+                        <div class="footer_brand_news_quote">
+                            <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                            <h4>Get A Quote</h4>
+                        </div>
                     </div>
                 </div>
-                <div class="footer_social">
+                <div class="footer_social wrapper">
                    <h5>Copyright 2017, All Right Reserved, 360degree</h5>
                    <ul class="footer_social_icons">
                        <li>
@@ -418,9 +417,6 @@
                         </li>
                    </ul>
                 </div>
-                
-            </div>
-        </div>
     </footer>
     
     <script src='https://use.fontawesome.com/3f84cb1160.js'></script>
