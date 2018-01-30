@@ -62,15 +62,18 @@
             </div>
         </div>
         <div class="navigation wrapper">
-            <ul class="navigation_links">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Projects</a></li>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">Shop</a></li>
-                <li class="navigation_links_contact"><a href="#">Contact</a></li>
-            </ul>
+            <div class="dropdown">
+                <i class="fa fa-bars" aria-hidden="true"></i>
+                <ul class="navigation_links">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Projects</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Shop</a></li>
+                    <li class="navigation_links_contact"><a href="#">Contact</a></li>
+                </ul>
+            </div>
             <div class="navigation_search">
                <div class="navigation_search_image">
                     <img src="components/imgs/shopping-bag.svg" alt="Shopping bag icon">
@@ -104,6 +107,8 @@
     </nav>
     <header>
         <div class="header_image">
+            <!-- <i class="fa fa-chevron-circle-left" aria-hidden="true"></i>
+            <i class="fa fa-chevron-circle-right" aria-hidden="true"></i> -->
             <div class="wrapper">
                 <div class="header_text">
                     <h1>Advisory Business Consulting Services</h1>
@@ -315,13 +320,13 @@
     <footer>
         <div class="footer_logos">
                <div class="wrapper">
-                   <img src="components/imgs/GroupM.svg" alt="">
-                   <img src="components/imgs/logo-oxfam.svg" alt="">
-                   <img src="components/imgs/ANC.svg" alt="">
-                   <img src="components/imgs/VMware.svg" alt="">
+                   <div class="footer_logos_image"><img src="components/imgs/GroupM.svg" alt=""></div>
+                   <div class="footer_logos_image"><img src="components/imgs/logo-oxfam.svg" alt=""></div>
+                   <div class="footer_logos_image"><img src="components/imgs/ANC.svg" alt=""></div>
+                   <div class="footer_logos_image"><img src="components/imgs/VMware.svg" alt=""></div>
 
                 <div class="footer_contact">
-                    <!-- <div class="wrapper"> -->
+                   
                         <div class="footer_contact_block nav_contact_links">
                             <img src='components/imgs/mail.svg' alt="">
                             <span>Advisory@gmail.com</span>
@@ -334,7 +339,7 @@
                             <img src="components/imgs/pin.svg" alt="">
                             <span1>43, New York, NY 10018</span>
                         </div>
-                    <!-- </div> -->
+
                 </div>
             </div>
         </div>
@@ -352,7 +357,7 @@
                            <p>Receive news right on your email</p>
                            <form action="">
                                 <input type="text" name="email" id="" placeholder="Your email">
-                                <input type="button" value="&#f1d9;">
+                                <button><i class="fa fa-paper-plane-o" aria-hidden="true"></i></button>
                             </form>
                        </div>
                     </div>
