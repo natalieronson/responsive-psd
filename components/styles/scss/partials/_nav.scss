@@ -49,8 +49,8 @@ a {
         // border: 1px solid red;
     }
     .business_information {
-        flex: 0 0 50%;
-        justify-content: center;
+        flex: 0 0 45%;
+        // justify-content: center;
         margin-bottom: 20px;
     }
 
@@ -58,7 +58,33 @@ a {
         flex: 0 0 100%;
         margin-bottom: 50px;
         order: -2;
+        margin: 0;
+        margin-bottom: 20px;
+        justify-content: center;
     }
+
+    .business_contact {
+        margin-top: 30px;
+        justify-content: flex-end;
+    }
+
+    .business_contact.location {
+        text-align: right;
+        margin-right: 20px;
+        img {
+            order: 10;
+        }
+        .business_information_text {
+            margin: 0;
+            margin-right: 20px;
+        }
+    }
+
+   .business_contact.time {
+       justify-content: flex-start;
+       margin-left: 20px;
+   }
+   
 
     .business_consultation {
         display: flex;
@@ -82,19 +108,78 @@ a {
     .navigation_links {
         display: none;
         position: absolute;
+        top: 10px;
+        left: 0px;
         background: $blue;
         // min-width: 40px;
-        z-index: 1;
+        // z-index: 1;
         text-align: center;
     }
 
-    .navigation-links li {
-        display: block;
-        padding: 10px;
+    .navigation.wrapper {
+        .navigation_links {
+            li {
+                display: block;
+                a {
+                    padding: 50px;
+                    @include fontCalc(30);
+                }
+            }
+        }
     }
 
-    .dropdown:hover .navigation_links {
+    .navigation.wrapper {
+        .navigation_links {
+            li:hover {
+                background: $grey;
+            }
+        }
+    }
+
+    .dropdown:hover .navigation_links,
+    .navigation_links:hover .navigation_links {
         display: block;
+    }
+
+    .navigation.wrapper {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .nav_contact_links {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .secondary_links {
+        flex-direction: row;
+    }
+    .nav_contact_group:first-of-type{
+        flex-direction: column;
+        order: 10;
+        margin-top: 10px;
+        .nav_contact_links {
+            justify-content: center;
+        }
+    }
+    .business_information.location, .business_information.time {
+        flex: 0 0 100%;
+        margin: 0;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        img {
+            margin: 0 auto;
+        }
+    }
+    .business_contact.location {
+        margin-bottom: 15px;
+        margin-top: 15px;
+    
+        img {
+            order: 0;
+        }
     }
 }
 
