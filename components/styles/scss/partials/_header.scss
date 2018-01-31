@@ -12,6 +12,15 @@
        color: $white;
     }
     .fa-circle {
+        color: $white;
+        opacity: 0.3;
+        transition: all 0.3s linear;
+    }
+}
+
+.header_image span:hover {
+    .fa-circle {
+        opacity: 1;
         color: $blue;
     }
 }
@@ -81,7 +90,7 @@
 
 @media screen and (max-width: 900px) {
     .header_image span:last-of-type {
-        left: 87%;
+        left: 85%;
     }
     .header_image span {
         top: 90%;
@@ -109,52 +118,3 @@
         }
    }
 }
-
-
-
-// @media screen and (max-width: 900px) {
-//     // .header_text {
-//     //     text-align: center;
-//     //     width: 100%;
-//     //     justify-content: center;
-//     //     h1 {
-//     //         @include fontCalc(30);
-//     //         padding-top: 30px;
-//     //     }
-//     //     p, h3 {
-//     //         @include fontCalc(16);
-//     //     }
-//     // }
-
-//     .header_text_expert {
-//         margin: 0 auto;
-//     }
-// }
-
-// @media screen and (max-width: 640px) {
-//     .header_text {
-//         h1 {
-//             @include fontCalc(18);
-//         }
-//         p, h3 {
-//             @include fontCalc(14);
-//         }
-//     }
-// }
-
-// @media screen and (max-width: 500px) {
-//     .header_text {
-//         h1 {
-//             padding-top: 10px;
-//         }
-//         p {
-//             line-height: 1;
-//             margin-bottom: 0;
-//             padding-bottom: 10px;
-//         }
-//     }
-//     .header_text_expert {
-//         width: 180px;
-//         margin-bottom: 20px;
-//     }
-// }

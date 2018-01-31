@@ -14,10 +14,6 @@
     max-height: 50px;
 }
 
-// .footer_logos_image:not(:last-of-type) {
-//     margin-right: 50px;
-// }
-
 .footer_logos_image img {
     width: 100%;
     height: 100%;
@@ -87,6 +83,8 @@ footer {
         position: relative;
         display: flex;
         align-items: center;
+        // display: inline;
+        width: 80%;
         input[type="text"]{
             background: $grey3;
             border: 0;
@@ -106,8 +104,8 @@ footer {
             height: 40px;
             border-radius: 15px;
             position: absolute;
-            bottom: 0;
-            right: 100px;
+            top: 0;
+            right: 30px;
             .fa {
                 color: $white;
             }
@@ -143,6 +141,14 @@ footer {
             color: $blue;
         }
     }
+}
+
+.footer_brand_focus ul li:hover {
+    text-decoration: underline;
+}
+
+.footer_brand_news h4:hover {
+    cursor: pointer;
 }
 
 .footer_brand_news_article {
@@ -219,7 +225,13 @@ footer {
     }
 }
 
-@media screen and (max-width: 920px) {
+.footer_social ul li:hover {
+    opacity: 0.7;
+}
+
+
+
+@media screen and (max-width: 1000px) {
     .footer_main {
         flex-direction: column;
     }
@@ -235,6 +247,9 @@ footer {
      .footer_brand_news_quote {
         display: flex;
         justify-content: center;
+    }
+    .footer_brand_logo_email form {
+        width: 100%;
     }
 }
 

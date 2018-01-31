@@ -38,7 +38,6 @@ ul {
 
 .services_list {
     flex-wrap: wrap;
-    // justify-content: space-between;
 }
 
 .footer_brand_news_quote {
@@ -53,6 +52,10 @@ ul {
     .fa {
         margin-right: 10px;
     }
+}
+
+.arrow:hover {
+    cursor: pointer;
 }
 
 .about {
@@ -135,9 +138,6 @@ ul {
         margin: 0;
 }
     
-// .about_more {
-//         color: $blue;
-// }
        
 .about_more h3 {
             @include fontCalc(18);
@@ -168,7 +168,6 @@ ul {
         flex-direction: column;     
     }
     .about_more {
-        // margin: 0 auto;
         margin-bottom: 20px;
     }
 }
@@ -261,9 +260,6 @@ ul {
         margin: 0;
     }
     hr {
-        // background-color: $blue;
-        // height: 2px;
-        // width: 20%;
         margin-left: 0;
     }
     .choice_text--tagline {
@@ -285,7 +281,6 @@ ul {
 .choice img {
     width: 43%;
     height: auto;
-    // max-height: 400px;
     padding-top: 40px;
 }
 
@@ -385,6 +380,10 @@ ul {
     }
 }
 
+.stats_block:last-of-type {
+    border: none;
+}
+
 @media screen and (max-width: 950px) {
     .stats .wrapper {
         flex-wrap: wrap;
@@ -422,16 +421,9 @@ ul {
         color: $blue;
         @include fontCalc(50);
         font-weight: 700;
-        // padding-bottom: 50px;
         margin: 0;
         text-align: center;
     }
-    // hr {
-    //     background-color: $blue;
-    //     height: 2px;
-    //     width: 5%;
-    //     // padding-bottom: 50px;
-    // }
 }
 
 .project_information_more {
@@ -496,9 +488,6 @@ ul {
 
 .quote_text {
     margin-left: 50px;
-    // hr {
-    //     width: 80px;
-    // }
     p:nth-of-type(2) {
         font-size: fontCalc(22);
     }
@@ -516,11 +505,17 @@ ul {
 
 .quote_text .slider_element {
         margin-right: 5px;
-        background: $white;
-        border: 1px solid $white;
+        background: $borderLight;
+        opacity: 0.5;
+        border: 1px solid $borderLight;
         border-radius: 5px;
         width: 25px;
         height: 10px;
+}
+
+.quote_text .slider_element:hover {
+    background: $white;
+    border: 1px solid $white;
 }
 
 .quote img {
@@ -534,7 +529,6 @@ ul {
         .quote_image {
             max-width: 400px;
             margin: 0 auto;
-            // flex: 0 1 400px;
         }
     }
 
