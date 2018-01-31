@@ -102,6 +102,7 @@ a {
         flex: 0 0 100%;
         justify-content: center;
         order: -1;
+        margin-bottom: 20px;
     }
 
     .dropdown {
@@ -206,13 +207,25 @@ a {
         flex-direction: row;
     }
 
-    .phone li:last-of-type, .email li:last-of-type {
-        visibility: hidden;
+    .nav_contact_links.phone img {
+        padding-right: 50px;
     }
 
-    .phone:hover li:last-of-type, .email:hover li:last-of-type {
-        visibility: visible;
+    .nav_contact_links.email img {
+        padding-left: 50px;
     }
+
+    .business_consultation {
+        margin-bottom: 20px;
+    }
+
+    // .phone li:last-of-type, .email li:last-of-type {
+    //     visibility: hidden;
+    // }
+
+    // .phone:hover li:last-of-type, .email:hover li:last-of-type {
+    //     visibility: visible;
+    // }
 }
 
 .nav_contact_links li {

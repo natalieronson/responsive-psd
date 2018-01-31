@@ -497,7 +497,8 @@ ul {
     align-items: center;
     -webkit-box-flex: 0;
     -ms-flex: 0 0 50%;
-    flex: 0 0 50%; } }
+    flex: 0 0 50%;
+    border: none; } }
 
 @media screen and (max-width: 650px) {
   .stats .stats_block {
@@ -842,7 +843,8 @@ a {
     justify-content: center;
     -webkit-box-ordinal-group: 0;
     -ms-flex-order: -1;
-    order: -1; }
+    order: -1;
+    margin-bottom: 20px; }
   .dropdown {
     position: relative; }
   .dropdown .fa {
@@ -935,10 +937,12 @@ a {
     -webkit-box-direction: normal;
     -ms-flex-direction: row;
     flex-direction: row; }
-  .phone li:last-of-type, .email li:last-of-type {
-    visibility: hidden; }
-  .phone:hover li:last-of-type, .email:hover li:last-of-type {
-    visibility: visible; } }
+  .nav_contact_links.phone img {
+    padding-right: 50px; }
+  .nav_contact_links.email img {
+    padding-left: 50px; }
+  .business_consultation {
+    margin-bottom: 20px; } }
 
 .nav_contact_links li {
   padding: 0 5px; }
@@ -1119,7 +1123,7 @@ a {
   top: 45%; }
 
 .header_image span:last-of-type {
-  left: 95%; }
+  right: 0; }
 
 .header_text_expert {
   display: -webkit-box;
@@ -1171,7 +1175,7 @@ a {
 
 @media screen and (max-width: 900px) {
   .header_image span:last-of-type {
-    left: 85%; }
+    right: 0; }
   .header_image span {
     top: 90%; } }
 
@@ -1454,7 +1458,7 @@ footer {
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-    bottom: -150px; }
+    bottom: -180px; }
   .footer_contact_block {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1466,7 +1470,7 @@ footer {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    padding-bottom: 10px; }
+    padding-bottom: 20px; }
     .footer_contact_block img {
       padding: 0; }
   .footer_contact_block img {
@@ -1485,4 +1489,6 @@ footer {
     .footer_logos_image img {
       max-height: 50px; }
   .footer_social .footer_social_icons {
-    padding: 0; } }
+    padding: 0; }
+  .footer_brand {
+    padding-top: 50px; } }

@@ -256,13 +256,13 @@ footer {
 @media screen and (max-width: 750px) {
     .footer_contact {
        flex-direction: column;
-       bottom: - 150px;
+       bottom: - 180px;
    }
     .footer_contact_block {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        padding-bottom: 10px;
+        padding-bottom: 20px;
         img {
             padding: 0;
         }
@@ -291,6 +291,10 @@ footer {
 
     .footer_social .footer_social_icons {
         padding: 0;
+    }
+
+    .footer_brand {
+        padding-top: 50px;
     }
 
    

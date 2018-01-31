@@ -31,7 +31,7 @@
 }
 
 .header_image span:last-of-type {
-    left: 95%;
+    right: 0;
 }
 
 .header_text_expert {
@@ -90,7 +90,7 @@
 
 @media screen and (max-width: 900px) {
     .header_image span:last-of-type {
-        left: 85%;
+        right: 0;
     }
     .header_image span {
         top: 90%;
