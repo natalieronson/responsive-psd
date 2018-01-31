@@ -17,11 +17,18 @@ h1, h2, h3, h4, h5, h6 {
     width: 90%;
 }
 
+hr {
+    width: 80px;
+    background: $blue;
+    height: 3px;
+    border: 0;
+}
+
 ul {
     list-style-type: none;
 }
 
-.about_more, .about, .services_list, .choice, .choice_services, .stats, .projects, .projects_images, .project_information_more, .quote, .blog_posts, .footer_contact, .footer_brand, .footer_brand_logo, .footer_brand_focus, .footer_main, .footer_social, .footer_social_icons, .footer_brand_logo, .footer_brand_news_quote, .arrow, .lower_wrapper, .choice_services_block_title {
+.about_more, .about, .services_list, .choice, .choice_services, .stats, .projects, .projects_images, .project_information_more, .quote, .blog_posts, .footer_contact, .footer_brand, .footer_brand_logo, .footer_brand_focus, .footer_main, .footer_social, .footer_social_icons, .footer_brand_logo, .footer_brand_news_quote, .arrow, .lower_wrapper, .choice_services_block_title, .slider {
     display: flex;
 }
 
@@ -32,23 +39,6 @@ ul {
 .services_list {
     flex-wrap: wrap;
     // justify-content: space-between;
-}
-
-// .services_list_item {
-//     flex: 0 1 33.3%;
-// }
-
-.footer_brand {
-    border: 1px solid red;
-}
-
-// .footer_main, .footer_brand_focus, .footer_main_wrapper {
-//     // border: 1px solid green;
-// }
-
-
-.footer_main { 
-    border: 5px solid purple;
 }
 
 .footer_brand_news_quote {
@@ -68,6 +58,8 @@ ul {
 .about {
     background-image: url(../../imgs/Ellipse.png);
     background-repeat: no-repeat;
+    margin-top: 100px;
+    margin-bottom: 50px;
 }
  
 .about .wrapper {
@@ -100,15 +92,17 @@ ul {
 
  .about_more {
     background: $blue;
-    width: 190px;
+    width: 170px;
     padding: 0px 3px;
+    padding-left: 20px;
     margin: 0;
  }
 
 .about .about_more h3 {
+        font-family: $source;
         color: $white;
         @include fontCalc(18);
-        font-weight: 400;
+        font-weight: 300;
         letter-spacing: 0.45px;
         line-height: 2;
         margin: 0;
@@ -118,6 +112,14 @@ ul {
         color: $white;
 }
 
+.about_offer .about_more {
+    padding: 0;
+    background: $aboutAside;
+    h3, .fa {
+        color: $blue;
+    }
+}
+
 
 .about_offer {
     border-right: 1px solid $blue;
@@ -125,7 +127,7 @@ ul {
     padding: 20px;
 }
     
-.about_offer h2 {
+.about .wrapper .about_offer h2 {
         color: $grey;
         @include fontCalc(18);
         font-weight: 700;
@@ -147,6 +149,14 @@ ul {
 
 .about_description p {
     margin-right: 50px;
+    margin-bottom: 60px;
+    margin-top: 50px;
+}
+
+
+
+.about_description {
+    flex: 1 0 70%;
 }
 
 .lower_wrapper {
@@ -169,13 +179,14 @@ ul {
     background-image: url(../../imgs/ellipses2.png);
     background-repeat: no-repeat;
     background-position: right bottom;
+    padding-top: 50px;
 }
 
 
 
 .services_list_item {
    background: $white;
-   padding: 10px;
+   padding: 40px;
    text-align: center;
    margin-bottom: 20px;
    img {
@@ -235,6 +246,8 @@ ul {
 
 .choice {
     margin-bottom: 40px;
+    padding-top: 100px;
+    padding-bottom: 50px;
 }
 
 .choice_text {
@@ -248,9 +261,9 @@ ul {
         margin: 0;
     }
     hr {
-        background-color: $blue;
-        height: 2px;
-        width: 20%;
+        // background-color: $blue;
+        // height: 2px;
+        // width: 20%;
         margin-left: 0;
     }
     .choice_text--tagline {
@@ -279,7 +292,7 @@ ul {
 .choice_services_block {
     border: 1px solid #f2f2f2;
     padding: 20px;
-    margin-bottom: 60px;
+    margin-bottom: 140px;
     h3 {
         color: $grey;
         @include fontCalc(18);
@@ -312,7 +325,7 @@ ul {
     
     .choice img {
         margin: 0 auto;
-        width: 80%;
+        width: 100%;
     }
 }
 
@@ -338,14 +351,19 @@ ul {
     background: $black5;
     .wrapper {
         display: flex;
-        border: 1px solid yellow;
         justify-content: space-between;
         width: 90%;
     }
 }
 
 .stats_block {
-    padding: 60px 0;
+    display: flex;
+    flex-direction: column;
+    padding: 60px 0px;
+    border-right: 1px solid $borderLight;
+    flex: 0 0 25%;
+    align-items: flex-start;
+    padding-left: 50px;
     img {
         max-height: 33px;
     }
@@ -354,7 +372,7 @@ ul {
         color: $white;
         font-family: $source;
         @include fontCalc(22);
-        font-weight: 400;
+        font-weight: 300;
         letter-spacing: 0.55px;
         line-height: 1.6;
     }
@@ -408,17 +426,16 @@ ul {
         margin: 0;
         text-align: center;
     }
-    hr {
-        background-color: $blue;
-        height: 2px;
-        width: 5%;
-        // padding-bottom: 50px;
-    }
+    // hr {
+    //     background-color: $blue;
+    //     height: 2px;
+    //     width: 5%;
+    //     // padding-bottom: 50px;
+    // }
 }
 
 .project_information_more {
     justify-content: space-between;
-    border: 1px solid red;
     p {
         font-family: $poppins;
         color: $grey;
@@ -430,6 +447,13 @@ ul {
         @include fontCalc(16);
         font-weight: 500;
         line-height: 2;
+    }
+}
+
+.project_information_more .arrow {
+    align-items: flex-start;
+    h4 {
+        margin: 0;
     }
 }
 
@@ -472,9 +496,9 @@ ul {
 
 .quote_text {
     margin-left: 50px;
-    hr {
-        width: 80px;
-    }
+    // hr {
+    //     width: 80px;
+    // }
     p:nth-of-type(2) {
         font-size: fontCalc(22);
     }
@@ -484,15 +508,19 @@ ul {
         @include fontCalc(16);
         line-height: 2.3;
     }
-    .slider {
-        display: flex;
+}
+
+.quote_text .slider {
+    justify-content: center;
+}
+
+.quote_text .slider_element {
         margin-right: 5px;
         background: $white;
         border: 1px solid $white;
-        border-radius: 80%;
-        width: 10px;
-        height: 5px;
-    }
+        border-radius: 5px;
+        width: 25px;
+        height: 10px;
 }
 
 .quote img {
@@ -526,10 +554,19 @@ ul {
     background-image:url(../../imgs/B.png);
     background-repeat: no-repeat;
     background-position: top center;
+    margin-top: 100px;
 }
 
 .services_title {
     background-image:url(../../imgs/S.png);
+}
+
+.projects_information {
+    padding-top: 100px;
+}
+
+.projects_information p {
+    margin-top: 0;
 }
 
 .project_information_more {
@@ -541,9 +578,29 @@ ul {
     justify-content: space-between;
     p {
         flex-basis: 73%;
+        margin: 0;
+        margin-bottom: 100px;
+
     }
     h4 {
         font-family: $poppins;
+    }
+}
+
+.blog_posts_post_image {
+    position: relative;
+}
+
+.hover-img {
+    display: none;
+}
+
+.blog_posts_post_image:hover {
+    .hover-img {
+        display: block;
+        position: absolute;
+        opacity: 0.9;
+        top: 0;
     }
 }
 

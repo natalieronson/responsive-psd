@@ -1,10 +1,28 @@
 .header_image {
     background-image: url('../../imgs/background.png');
     background-size: cover;
-    // border: 1px solid black;
     max-width: 100%;
     
     background-repeat: no-repeat;
+    position: relative;
+}
+
+.header_image {
+    .fa-angle-left, .fa-angle-right {
+       color: $white;
+    }
+    .fa-circle {
+        color: $blue;
+    }
+}
+
+.header_image span {
+    position: absolute;
+    top: 45%;
+}
+
+.header_image span:last-of-type {
+    left: 95%;
 }
 
 .header_text_expert {
@@ -30,8 +48,8 @@
     }
     p {
         color: $white;
-        @include fontCalc(18);
-        font-weight: 400;
+        @include fontCalc(16);
+        font-weight: 300;
         letter-spacing: 0.45px;
         line-height: 1.8;
         padding-bottom: 30px;
@@ -39,14 +57,15 @@
 }
 
 .header_text_expert {
-    width: 215px;
+    width: 180px;
     background: $blue;
     color: $white;
     align-items: center;
     padding: 3px 20px;
     h3 {
-        @include fontCalc(18);
-        font-weight: 400;
+        font-family: $source;
+        @include fontCalc(16);
+        font-weight: 300;
         letter-spacing: 0.45px;
         line-height: 2;
         margin: 0;
@@ -58,6 +77,15 @@
        @include fontCalc(50);
        padding-top: 10px;
    }
+}
+
+@media screen and (max-width: 900px) {
+    .header_image span:last-of-type {
+        left: 87%;
+    }
+    .header_image span {
+        top: 90%;
+    }
 }
 
 @media screen and (max-width: 700px) {
